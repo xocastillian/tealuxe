@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="menu--close"></div>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="logo">
+						<img src="images/logo.svg" alt="" />
+					</a>
+					<nav class="menu">
+						<button class="menu__btn">
+							<span></span><span></span><span></span><span></span>
+						</button>
+						<ul class="menu__list">
+							<li class="menu__close">
+								<button class="menu__close-btn">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+									>
+										<path
+											d="M0.553438 0.553437C-0.184479 1.29135 -0.184479 2.48775 0.55344 3.22567L7.32778 10L0.553436 16.7743C-0.184481 17.5123 -0.18448 18.7086 0.553437 19.4466C1.29136 20.1845 2.48776 20.1845 3.22567 19.4466L10 12.6722L16.7743 19.4465C17.5122 20.1845 18.7086 20.1845 19.4466 19.4465C20.1845 18.7086 20.1845 17.5122 19.4466 16.7743L12.6722 10L19.4466 3.2257C20.1845 2.48778 20.1845 1.29138 19.4466 0.553464C18.7086 -0.184451 17.5122 -0.184451 16.7743 0.553466L10 7.32777L3.22567 0.553437C2.48775 -0.18448 1.29136 -0.18448 0.553438 0.553437Z"
+											fill="#754E29"
+										/>
+									</svg>
+								</button>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Black</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Green</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">White</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Oolong</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Pu-erh</a>
+							</li>
+							<li class="mobile-nav">
+								<ul class="mobile-menu">
+									<div class="mobile-menu__block">
+										<li class="mobile-menu__item">
+											<a href="#" class="mobile-menu__link">Contact Us</a>
+										</li>
+										<li class="mobile-menu__item">
+											<a href="#" class="mobile-menu__link">Our Blog</a>
+										</li>
+										<li class="mobile-menu__item">
+											<a href="#" class="mobile-menu__link"
+												>Shipping and Delivery</a
+											>
+										</li>
+									</div>
+									<ul class="mobile-actions">
+										<li class="mobile-actions__item">
+											<a class="mobile-actions__link" href="#"
+												><svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="20"
+													height="22"
+													viewBox="0 0 20 22"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M14.5918 5C14.5728 4.9193 14.5531 4.83842 14.5325 4.75746C14.2648 3.70138 13.8433 2.55383 13.1559 1.65C12.4472 0.718018 11.4123 0 10 0C8.5877 0 7.5528 0.718018 6.84406 1.65C6.15673 2.55383 5.73518 3.70138 5.46747 4.75747C5.44695 4.83842 5.42722 4.9193 5.40825 5H3.78557C2.18414 5 0.856968 6.22455 0.750442 7.80044L0.00687452 18.8004C-0.110173 20.532 1.28239 22 3.042 22H16.958C18.7176 22 20.1102 20.532 19.9931 18.8004L19.2496 7.80044C19.143 6.22455 17.8159 5 16.2144 5H14.5918ZM5.94418 10C6.52516 10 6.95616 9.5684 6.95814 8.99817C6.9583 8.97438 6.95858 8.9506 6.95899 8.92682C6.95988 8.87413 6.9617 8.79455 6.96541 8.69194C6.97285 8.48652 6.98784 8.18999 7.018 7.83304C7.03941 7.57976 7.06824 7.29862 7.10693 7H12.8931C12.9318 7.29862 12.9606 7.57976 12.982 7.83305C13.0122 8.18999 13.0272 8.48652 13.0346 8.69194C13.0383 8.79455 13.0401 8.87413 13.041 8.92682C13.0414 8.95134 13.0418 8.97587 13.0419 9.0004C13.0419 9.0004 13.0419 10 14.0558 10C15.0698 10 15.0698 8.99866 15.0698 8.99866C15.0697 8.9636 15.0692 8.92854 15.0686 8.89349C15.0676 8.829 15.0654 8.7367 15.0612 8.62056C15.0528 8.38848 15.0361 8.06001 15.0029 7.66695C14.9856 7.46202 14.9637 7.23812 14.9359 7H16.2144C16.7482 7 17.1906 7.40818 17.2261 7.93348L17.9697 18.9335C18.0087 19.5107 17.5445 20 16.958 20H3.042C2.45547 20 1.99128 19.5107 2.03029 18.9335L2.77386 7.93348C2.80937 7.40818 3.25176 7 3.78557 7H5.06414C5.03633 7.23812 5.01441 7.46202 4.9971 7.66696C4.96389 8.06001 4.9472 8.38848 4.93879 8.62056C4.93459 8.7367 4.93245 8.829 4.93136 8.89349C4.93077 8.92785 4.93033 8.96221 4.93023 8.99658C4.92945 9.56716 5.36453 10 5.94418 10ZM7.4991 5H12.5009C12.2665 4.15322 11.9478 3.39466 11.5336 2.85C11.1017 2.28198 10.6156 2 10 2C9.38438 2 8.89835 2.28198 8.46639 2.85C8.0522 3.39466 7.73353 4.15322 7.4991 5Z"
+														fill="#151618"
+													/></svg
+											></a>
+										</li>
+										<li class="mobile-actions__item">
+											<a class="mobile-actions__link" href="#"
+												><svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="18"
+													height="22"
+													viewBox="0 0 18 22"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M9 11C11.7614 11 14 8.53756 14 5.5C14 2.46243 11.7614 0 9 0C6.23858 0 4 2.46243 4 5.5C4 8.53756 6.23858 11 9 11ZM9 8.8C7.34315 8.8 6 7.32254 6 5.5C6 3.67746 7.34315 2.2 9 2.2C10.6569 2.2 12 3.67746 12 5.5C12 7.32254 10.6569 8.8 9 8.8Z"
+														fill="#151618"
+													/>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M16.1029 13.1087C15.2604 12.2634 13.957 12.0811 12.9161 12.6987C12.7257 12.8117 12.5581 12.9151 12.4036 13.0105C11.9937 13.2635 11.6755 13.4598 11.2654 13.6283C10.75 13.8401 10.0835 14 9 14C7.92682 14 7.24926 13.8491 6.72609 13.6447C6.26355 13.464 5.89822 13.237 5.41685 12.9378C5.32296 12.8795 5.22448 12.8183 5.12019 12.7543C4.07587 12.1132 2.73464 12.2622 1.86415 13.1419C1.48443 13.5256 1.04036 14.0219 0.6849 14.5626C0.346032 15.0781 0 15.7638 0 16.5V19.0003C0 20.6574 1.34334 22 3 22H15C16.6567 22 18 20.6574 18 19.0003V16.5C18 15.7541 17.6447 15.0592 17.2996 14.5391C16.937 13.9927 16.4852 13.4923 16.1029 13.1087ZM13.9367 14.4187C14.1759 14.2768 14.478 14.3116 14.6863 14.5205C15.0214 14.8568 15.3724 15.2521 15.6331 15.645C15.9113 16.0642 16 16.352 16 16.5V19.0003C16 19.5524 15.5525 20 15 20H3C2.44752 20 2 19.5524 2 19.0003V16.5C2 16.3549 2.08549 16.0729 2.35613 15.6613C2.61017 15.2748 2.95358 14.8844 3.28579 14.5487C3.49412 14.3381 3.81106 14.2974 4.07389 14.4588C4.15661 14.5095 4.24087 14.5621 4.32694 14.6159C4.80938 14.9171 5.34918 15.254 5.99836 15.5076C6.79304 15.8181 7.72419 16 9 16C10.3002 16 11.2313 15.8046 12.0254 15.4783C12.6006 15.242 13.1079 14.9282 13.5558 14.6512C13.6879 14.5695 13.8148 14.491 13.9367 14.4187Z"
+														fill="#151618"
+													/></svg
+											></a>
+										</li>
+										<li class="mobile-actions__item">
+											<a class="mobile-action__link" href="#">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="22"
+													height="23"
+													viewBox="0 0 22 23"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M16.0392 15.1244C17.2714 13.584 18.0082 11.6301 18.0082 9.5041C18.0082 4.53127 13.9769 0.5 9.0041 0.5C4.03127 0.5 0 4.53127 0 9.5041C0 14.4769 4.03127 18.5082 9.0041 18.5082C11.1301 18.5082 13.084 17.7714 14.6244 16.5392L20.2921 22.207C20.6828 22.5977 21.3163 22.5977 21.707 22.207C22.0977 21.8163 22.0977 21.1828 21.707 20.7921L16.0392 15.1244ZM9.0041 16.5173C5.1308 16.5173 1.99087 13.3774 1.99087 9.5041C1.99087 5.6308 5.1308 2.49087 9.0041 2.49087C12.8774 2.49087 16.0173 5.6308 16.0173 9.5041C16.0173 13.3774 12.8774 16.5173 9.0041 16.5173Z"
+														fill="#151618"
+													/>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<ul class="user-actions">
+						<li class="user-actions__item">
+							<a class="user-actions__link" href="#"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="22"
+									viewBox="0 0 20 22"
+									fill="none"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M14.5918 5C14.5728 4.9193 14.5531 4.83842 14.5325 4.75746C14.2648 3.70138 13.8433 2.55383 13.1559 1.65C12.4472 0.718018 11.4123 0 10 0C8.5877 0 7.5528 0.718018 6.84406 1.65C6.15673 2.55383 5.73518 3.70138 5.46747 4.75747C5.44695 4.83842 5.42722 4.9193 5.40825 5H3.78557C2.18414 5 0.856968 6.22455 0.750442 7.80044L0.00687452 18.8004C-0.110173 20.532 1.28239 22 3.042 22H16.958C18.7176 22 20.1102 20.532 19.9931 18.8004L19.2496 7.80044C19.143 6.22455 17.8159 5 16.2144 5H14.5918ZM5.94418 10C6.52516 10 6.95616 9.5684 6.95814 8.99817C6.9583 8.97438 6.95858 8.9506 6.95899 8.92682C6.95988 8.87413 6.9617 8.79455 6.96541 8.69194C6.97285 8.48652 6.98784 8.18999 7.018 7.83304C7.03941 7.57976 7.06824 7.29862 7.10693 7H12.8931C12.9318 7.29862 12.9606 7.57976 12.982 7.83305C13.0122 8.18999 13.0272 8.48652 13.0346 8.69194C13.0383 8.79455 13.0401 8.87413 13.041 8.92682C13.0414 8.95134 13.0418 8.97587 13.0419 9.0004C13.0419 9.0004 13.0419 10 14.0558 10C15.0698 10 15.0698 8.99866 15.0698 8.99866C15.0697 8.9636 15.0692 8.92854 15.0686 8.89349C15.0676 8.829 15.0654 8.7367 15.0612 8.62056C15.0528 8.38848 15.0361 8.06001 15.0029 7.66695C14.9856 7.46202 14.9637 7.23812 14.9359 7H16.2144C16.7482 7 17.1906 7.40818 17.2261 7.93348L17.9697 18.9335C18.0087 19.5107 17.5445 20 16.958 20H3.042C2.45547 20 1.99128 19.5107 2.03029 18.9335L2.77386 7.93348C2.80937 7.40818 3.25176 7 3.78557 7H5.06414C5.03633 7.23812 5.01441 7.46202 4.9971 7.66696C4.96389 8.06001 4.9472 8.38848 4.93879 8.62056C4.93459 8.7367 4.93245 8.829 4.93136 8.89349C4.93077 8.92785 4.93033 8.96221 4.93023 8.99658C4.92945 9.56716 5.36453 10 5.94418 10ZM7.4991 5H12.5009C12.2665 4.15322 11.9478 3.39466 11.5336 2.85C11.1017 2.28198 10.6156 2 10 2C9.38438 2 8.89835 2.28198 8.46639 2.85C8.0522 3.39466 7.73353 4.15322 7.4991 5Z"
+										fill="#151618"
+									/></svg
+							></a>
+						</li>
+						<li class="user-actions__item">
+							<a class="user-actions__link" href="#"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="22"
+									viewBox="0 0 18 22"
+									fill="none"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M9 11C11.7614 11 14 8.53756 14 5.5C14 2.46243 11.7614 0 9 0C6.23858 0 4 2.46243 4 5.5C4 8.53756 6.23858 11 9 11ZM9 8.8C7.34315 8.8 6 7.32254 6 5.5C6 3.67746 7.34315 2.2 9 2.2C10.6569 2.2 12 3.67746 12 5.5C12 7.32254 10.6569 8.8 9 8.8Z"
+										fill="#151618"
+									/>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16.1029 13.1087C15.2604 12.2634 13.957 12.0811 12.9161 12.6987C12.7257 12.8117 12.5581 12.9151 12.4036 13.0105C11.9937 13.2635 11.6755 13.4598 11.2654 13.6283C10.75 13.8401 10.0835 14 9 14C7.92682 14 7.24926 13.8491 6.72609 13.6447C6.26355 13.464 5.89822 13.237 5.41685 12.9378C5.32296 12.8795 5.22448 12.8183 5.12019 12.7543C4.07587 12.1132 2.73464 12.2622 1.86415 13.1419C1.48443 13.5256 1.04036 14.0219 0.6849 14.5626C0.346032 15.0781 0 15.7638 0 16.5V19.0003C0 20.6574 1.34334 22 3 22H15C16.6567 22 18 20.6574 18 19.0003V16.5C18 15.7541 17.6447 15.0592 17.2996 14.5391C16.937 13.9927 16.4852 13.4923 16.1029 13.1087ZM13.9367 14.4187C14.1759 14.2768 14.478 14.3116 14.6863 14.5205C15.0214 14.8568 15.3724 15.2521 15.6331 15.645C15.9113 16.0642 16 16.352 16 16.5V19.0003C16 19.5524 15.5525 20 15 20H3C2.44752 20 2 19.5524 2 19.0003V16.5C2 16.3549 2.08549 16.0729 2.35613 15.6613C2.61017 15.2748 2.95358 14.8844 3.28579 14.5487C3.49412 14.3381 3.81106 14.2974 4.07389 14.4588C4.15661 14.5095 4.24087 14.5621 4.32694 14.6159C4.80938 14.9171 5.34918 15.254 5.99836 15.5076C6.79304 15.8181 7.72419 16 9 16C10.3002 16 11.2313 15.8046 12.0254 15.4783C12.6006 15.242 13.1079 14.9282 13.5558 14.6512C13.6879 14.5695 13.8148 14.491 13.9367 14.4187Z"
+										fill="#151618"
+									/></svg
+							></a>
+						</li>
+						<li class="user-actions__item user-actions__item-search">
+							<a class="user-action__link" href="#">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="22"
+									height="23"
+									viewBox="0 0 22 23"
+									fill="none"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M16.0392 15.1244C17.2714 13.584 18.0082 11.6301 18.0082 9.5041C18.0082 4.53127 13.9769 0.5 9.0041 0.5C4.03127 0.5 0 4.53127 0 9.5041C0 14.4769 4.03127 18.5082 9.0041 18.5082C11.1301 18.5082 13.084 17.7714 14.6244 16.5392L20.2921 22.207C20.6828 22.5977 21.3163 22.5977 21.707 22.207C22.0977 21.8163 22.0977 21.1828 21.707 20.7921L16.0392 15.1244ZM9.0041 16.5173C5.1308 16.5173 1.99087 13.3774 1.99087 9.5041C1.99087 5.6308 5.1308 2.49087 9.0041 2.49087C12.8774 2.49087 16.0173 5.6308 16.0173 9.5041C16.0173 13.3774 12.8774 16.5173 9.0041 16.5173Z"
+										fill="#151618"
+									/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="top">
+				<div class="container">
+					<div class="top__inner">
+						<h1 class="top__title">
+							A cup of tea is a moment of calm in the chaos of life
+						</h1>
+						<p class="top__text">
+							Wide selection of high-quality teas from all over the world,
+							carefully curated by tea experts.
+						</p>
+					</div>
+				</div>
+			</section>
+			<blockquote class="blockquote">
+				<p class="blockquote__text">
+					"Tea is not just a drink, it's a way of life and a way to connect with
+					our loved ones."
+				</p>
+			</blockquote>
+			<section class="assortment">
+				<div class="container">
+					<h3 class="title assortment__title">Explore our Collections</h3>
+					<ul class="assortment__list">
+						<li class="assortment__item">
+							<a href="#" class="assortment__link">
+								<img
+									src="/images/black-tea.png"
+									alt=""
+									class="assortment__img"
+								/>
+								<p class="assortment__item-name">Black</p>
+							</a>
+						</li>
+						<li class="assortment__item">
+							<a href="#" class="assortment__link">
+								<img
+									src="/images/green-tea.png"
+									alt=""
+									class="assortment__img"
+								/>
+								<p class="assortment__item-name">Green</p>
+							</a>
+						</li>
+						<li class="assortment__item">
+							<a href="#" class="assortment__link">
+								<img
+									src="/images/white-tea.png"
+									alt=""
+									class="assortment__img"
+								/>
+								<p class="assortment__item-name">White</p>
+							</a>
+						</li>
+						<li class="assortment__item">
+							<a href="#" class="assortment__link">
+								<img
+									src="/images/oolong-tea.png"
+									alt=""
+									class="assortment__img"
+								/>
+								<p class="assortment__item-name">Oolong</p>
+							</a>
+						</li>
+						<li class="assortment__item">
+							<a href="#" class="assortment__link">
+								<img
+									src="/images/pu-erh-tea.png"
+									alt=""
+									class="assortment__img"
+								/>
+								<p class="assortment__item-name">Pu-erh</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<h3 class="title reviews__title">What our Clients say</h3>
+					<ul class="reviews__list">
+						<li class="reviews__item">
+							<blockquote>
+								<p class="reviews__text">
+									"As a tea enthusiast, I have tried teas from all over the
+									world, but this tea store truly stands out. Their teas are of
+									the highest quality and the variety is impressive. This is
+									definitely a tea store that every tea lover should visit."
+								</p>
+								<cite class="reviews__autor">Alice</cite>
+							</blockquote>
+						</li>
+						<li class="reviews__item">
+							<blockquote>
+								<p class="reviews__text">
+									"This tea store is my go-to for all my tea needs. Their
+									selection is unbeatable and the quality of their teas is
+									exceptional."
+								</p>
+								<cite class="reviews__autor">Mad-Hatter</cite>
+							</blockquote>
+						</li>
+						<li class="reviews__item">
+							<blockquote>
+								<p class="reviews__text">
+									"If you're a tea lover, you must visit this tea store. The
+									selection is vast and the quality is outstanding. I guarantee
+									you won't be disappointed."
+								</p>
+								<cite class="reviews__autor">Dormouse</cite>
+							</blockquote>
+						</li>
+						<li class="reviews__item reviews__item-dn">
+							<blockquote>
+								<p class="reviews__text">
+									"I am not a big tea drinker, but this tea store has converted
+									me. I highly recommend this tea store to anyone looking for a
+									high-quality tea experience."
+								</p>
+								<cite class="reviews__autor">March Hare</cite>
+							</blockquote>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="main-blog">
+				<div class="container">
+					<h3 class="title main-blog__title">Our Tea Blog</h3>
+					<ul class="main-blog__list">
+						<li class="main-blog__item">
+							<img
+								src="/images/tea-time.jpg"
+								alt=""
+								class="main-blog__item-img main-blog__item-img_55"
+							/>
+							<div class="main-blog__item-content">
+								<h4 class="main-blog__item-title">
+									Tea Time Travels: Funny Moments from Around the World
+								</h4>
+								<a href="#" class="main-blog__item-autor">by Robinson Crusoe</a>
+								<a href="#" class="main-blog__item-link">Read →</a>
+							</div>
+						</li>
+						<li class="main-blog__item">
+							<img
+								src="/images/role-of-tea.jpg"
+								alt=""
+								class="main-blog__item-img main-blog__item-img_150"
+							/>
+							<div class="main-blog__item-content">
+								<h4 class="main-blog__item-title">
+									The Role of Tea in Mental Health
+								</h4>
+								<a href="#" class="main-blog__item-autor">by Joker</a>
+								<a href="#" class="main-blog__item-link">Read →</a>
+							</div>
+						</li>
+						<li class="main-blog__item">
+							<img
+								src="/images/tea-rific.jpg"
+								alt=""
+								class="main-blog__item-img main-blog__item-img_55"
+							/>
+							<div class="main-blog__item-content">
+								<h4 class="main-blog__item-title">
+									Tea-rific Tales: Hilarious Stories from Tea Lovers
+								</h4>
+								<a href="#" class="main-blog__item-autor"
+									>by Casper the Friendly Ghost</a
+								>
+								<a href="#" class="main-blog__item-link">Read →</a>
+							</div>
+						</li>
+						<li class="main-blog__item">
+							<img
+								src="/images/tea-coffee.jpg"
+								alt=""
+								class="main-blog__item-img main-blog__item-img_150"
+							/>
+							<div class="main-blog__item-content">
+								<h4 class="main-blog__item-title">
+									Tea and Caffeine: Effects on the Brain and Behavior
+								</h4>
+								<a href="#" class="main-blog__item-autor"
+									>by Author Authorius</a
+								>
+								<a href="#" class="main-blog__item-link">Read →</a>
+							</div>
+						</li>
+					</ul>
+					<div class="main-blog__view-all">
+						<a href="#" class="main-blog__link">View all</a>
+					</div>
+				</div>
+			</section>
+			<section class="mailing-list">
+				<div class="container">
+					<img class="mailing-list__bg" src="/images/tea-bg-mail.png" alt="" />
+					<h2 class="title mailing-list__title">Want to know more?</h2>
+					<div class="mailing-list__inner">
+						<p class="mailing-list__text">
+							Join our mailing list and stay up-to-date with the latest news,
+							promotions, and exclusive offers from our tea store. Be the first
+							to know about new tea arrivals, seasonal blends, and special
+							discounts. Don't miss out on the tea-rrific perks - sign up today!
+						</p>
+						<form action="#" class="mailing-list__form">
+							<div class="mailing-list__input">
+								<input
+									class="mailing-list__email"
+									type="email"
+									name="email"
+									id="email"
+									placeholder="name@email.com"
+								/>
+								<button class="mailng-list__btn" type="submit">Join</button>
+							</div>
+							<label class="mailing-list__label" for="checkbox">
+								<div class="checkbox-box">
+									<input class="checkbox" type="checkbox" id="checkbox" />
+									<span class="checkbox-style"></span>
+									<p class="checkbox__text">
+										We take your privacy seriously and are committed to
+										protecting your personal information. By subscribing to our
+										mailing list, you are consenting to receive periodic emails
+										from us about our products, promotions, and other
+										tea-related information.
+									</p>
+								</div>
+							</label>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="prioritise">
+				<div class="container">
+					<h3 class="title prioritise__title">We Prioritise</h3>
+					<ul class="prioritise__list">
+						<li class="prioritise__item">
+							<p class="prioritise__text">Single garden teas</p>
+							<p class="prioritise__descr">Complete transparency</p>
+							<img src="/images/pr1.svg" alt="" />
+						</li>
+						<li class="prioritise__item">
+							<p class="prioritise__text">Only Loose leaf tea</p>
+							<p class="prioritise__descr">Best Drinking Experience</p>
+							<img src="/images/pr2.svg" alt="" />
+						</li>
+						<li class="prioritise__item">
+							<p class="prioritise__text">Customer support</p>
+							<p class="prioritise__descr">No bots, no automated replies</p>
+							<img src="/images/pr3.svg" alt="" />
+						</li>
+						<li class="prioritise__item">
+							<p class="prioritise__text">Fast shipping</p>
+							<p class="prioritise__descr">Save, Convenient, Reliable</p>
+							<img src="/images/pr4.svg" alt="" />
+						</li>
+					</ul>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__nav">
+							<ul class="footer__nav-products">
+								<p class="footer__nav-title">Products</p>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Black tea</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Green tea</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">White tea</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Oolong tea</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Pu-erh tea</a>
+								</li>
+							</ul>
+							<ul class="footer__nav-products">
+								<p class="footer__nav-title">Company</p>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">About Us</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Contact Us</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Our Blog</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">FAQ</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Shipping & Delivery</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Refund policy</a>
+								</li>
+								<li class="footer__nav-items">
+									<a href="#" class="footer__nav-links">Terms of Service</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__contacts">
+							<div class="footer__blockquote">
+								<blockquote class="footer__blockquote-text">
+									“Tea is a journey. It can take you to new places and open your
+									mind to new experiences. Let every sip transport you to a
+									world of wonder and possibility”
+								</blockquote>
+								<cite class="footer__blockquote-autor"
+									>Dragomir Teodorescu, Tealuxe owner</cite
+								>
+							</div>
+							<div class="footer__contacts-content">
+								<h4 class="footer__contacts-title">Stay In Touch</h4>
+								<p class="footer__contacts-text">
+									Please feel free to contact us via the email of phone. We
+									would be happy to hear from you!
+								</p>
+								<div class="footer__contacts-links">
+									<img src="/images/logo.svg" alt="" />
+									<div class="footer__contacts-items">
+										<div class="footer__contacts-items-mail">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="22"
+												height="16"
+												viewBox="0 0 22 16"
+												fill="none"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M19 0C20.6569 0 22 1.34315 22 3V13C22 14.6569 20.6569 16 19 16H3C1.34315 16 0 14.6569 0 13V3C0 1.34315 1.34315 0 3 0H19ZM18.2529 2H3.74718L10.3804 7.23673C10.7437 7.52356 11.2563 7.52356 11.6197 7.23673L18.2529 2ZM2 3.1688V13C2 13.5523 2.44772 14 3 14H19C19.5523 14 20 13.5523 20 13V3.16882L12.8589 8.8065C11.769 9.66697 10.231 9.66697 9.14108 8.8065L2 3.1688Z"
+													fill="#151618"
+												/>
+											</svg>
+											<a
+												class="footer__contacts-items-item"
+												href="mailto:info@tealuxe.com"
+												>info@tealuxe.com</a
+											>
+										</div>
+										<div class="footer__contacts-items-phone">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="21"
+												height="21"
+												viewBox="0 0 21 21"
+												fill="none"
+											>
+												<path
+													fill-rule="evenodd"
+													clip-rule="evenodd"
+													d="M15.7649 20.7244C13.7448 20.2183 9.60927 18.7915 5.86016 15.0423C2.11105 11.2932 0.684203 7.15771 0.178075 5.13763C-0.11279 3.97671 0.410977 2.85647 1.29909 2.2221L3.62734 0.559061C4.98962 -0.413994 6.88472 -0.0838051 7.83764 1.29263L9.30343 3.40989C9.92563 4.30863 9.71102 5.54043 8.82152 6.17578L7.65274 7.01062C7.82963 7.68723 8.37979 9.07669 10.1028 10.7997C11.8258 12.5227 13.2153 13.0729 13.8919 13.2498L14.7267 12.081C15.3621 11.1915 16.5939 10.9769 17.4926 11.5991L19.6099 13.0649C20.9863 14.0178 21.3165 15.9129 20.3434 17.2752L18.6804 19.6034C18.046 20.4915 16.9258 21.0153 15.7649 20.7244ZM7.27437 13.6281C10.6838 17.0375 14.4462 18.3322 16.2509 18.7844C16.5147 18.8505 16.8336 18.748 17.0529 18.4409L18.716 16.1127C19.0403 15.6586 18.9303 15.0269 18.4714 14.7092L16.3542 13.2435L15.4583 14.4977C15.0922 15.0103 14.4151 15.4123 13.6267 15.2422C12.6427 15.0299 10.8237 14.349 8.68859 12.2139C6.5535 10.0788 5.87259 8.25983 5.66027 7.27582C5.49017 6.48743 5.89221 5.81033 6.40479 5.44421L7.65905 4.54831L6.19325 2.43105C5.87561 1.97224 5.24391 1.86218 4.78982 2.18653L2.46157 3.84956C2.15453 4.06888 2.05202 4.38778 2.11811 4.65155C2.57029 6.45631 3.86499 10.2187 7.27437 13.6281Z"
+													fill="#151618"
+												/>
+											</svg>
+											<a
+												class="footer__contacts-items-item"
+												href="tel:370680123456"
+												>+370 680 123456</a
+											>
+										</div>
+									</div>
+								</div>
+								<div class="footer__contacts-social">
+									<ul class="footer__contacts-social__list">
+										<li class="footer__contacts-social__items">
+											<a href="#" class="footer__contacts-social__links"
+												><svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="22"
+													height="22"
+													viewBox="0 0 22 22"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M19 0C20.6569 0 22 1.34315 22 3V19C22 20.6569 20.6569 22 19 22H3C1.34315 22 0 20.6569 0 19V3C0 1.34315 1.34315 0 3 0H19ZM19 2C19.5523 2 20 2.44772 20 3V19C20 19.5523 19.5523 20 19 20H14V12.9999H16.0762C16.5066 12.9999 16.8887 12.7245 17.0249 12.3161L17.4679 10.9871C17.6298 10.5014 17.2683 9.99992 16.7564 9.99992H14V7.99992C14 7.49992 14.5 6.99992 15 6.99992H17C17.5523 6.99992 18 6.5522 18 5.99992V5.31393C18 4.99091 17.7937 4.7013 17.4813 4.61887C16.1705 4.27295 15 4.27295 15 4.27295C12.5 4.27295 11 5.99992 11 7.49992V9.99992H9C8.44772 9.99992 8 10.4476 8 10.9999V11.9999C8 12.5522 8.44771 12.9999 9 12.9999H11V20H3C2.44772 20 2 19.5523 2 19V3C2 2.44772 2.44772 2 3 2H19Z"
+														fill="#151618"
+													/></svg></a
+											><a href="#" class="footer__contacts-social__links"
+												><svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="24"
+													height="18"
+													viewBox="0 0 24 18"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M9.49614 4.13176C9.18664 3.9549 8.80639 3.95617 8.49807 4.13509C8.18976 4.31401 8 4.64353 8 5V13C8 13.3565 8.18976 13.686 8.49807 13.8649C8.80639 14.0438 9.18664 14.0451 9.49614 13.8682L16.4961 9.86824C16.8077 9.6902 17 9.35886 17 9C17 8.64114 16.8077 8.3098 16.4961 8.13176L9.49614 4.13176ZM13.9844 9L10 11.2768V6.72318L13.9844 9Z"
+														fill="#0F0F0F"
+													/>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M0 9C0 5.25027 0 3.3754 0.954915 2.06107C1.26331 1.6366 1.6366 1.26331 2.06107 0.954915C3.3754 0 5.25027 0 9 0H15C18.7497 0 20.6246 0 21.9389 0.954915C22.3634 1.26331 22.7367 1.6366 23.0451 2.06107C24 3.3754 24 5.25027 24 9C24 12.7497 24 14.6246 23.0451 15.9389C22.7367 16.3634 22.3634 16.7367 21.9389 17.0451C20.6246 18 18.7497 18 15 18H9C5.25027 18 3.3754 18 2.06107 17.0451C1.6366 16.7367 1.26331 16.3634 0.954915 15.9389C0 14.6246 0 12.7497 0 9ZM9 2H15C16.9194 2 18.1983 2.00275 19.1673 2.10773C20.0989 2.20866 20.504 2.38448 20.7634 2.57295C21.018 2.75799 21.242 2.98196 21.4271 3.23664C21.6155 3.49605 21.7913 3.90113 21.8923 4.83269C21.9973 5.80167 22 7.08058 22 9C22 10.9194 21.9973 12.1983 21.8923 13.1673C21.7913 14.0989 21.6155 14.504 21.4271 14.7634C21.242 15.018 21.018 15.242 20.7634 15.4271C20.504 15.6155 20.0989 15.7913 19.1673 15.8923C18.1983 15.9973 16.9194 16 15 16H9C7.08058 16 5.80167 15.9973 4.83269 15.8923C3.90113 15.7913 3.49605 15.6155 3.23664 15.4271C2.98196 15.242 2.75799 15.018 2.57295 14.7634C2.38448 14.504 2.20866 14.0989 2.10773 13.1673C2.00275 12.1983 2 10.9194 2 9C2 7.08058 2.00275 5.80167 2.10773 4.83269C2.20866 3.90113 2.38448 3.49605 2.57295 3.23664C2.75799 2.98196 2.98196 2.75799 3.23664 2.57295C3.49605 2.38448 3.90113 2.20866 4.83269 2.10773C5.80167 2.00275 7.08058 2 9 2Z"
+														fill="#0F0F0F"
+													/></svg></a
+											><a href="#" class="footer__contacts-social__links"
+												><svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="22"
+													height="22"
+													viewBox="0 0 22 22"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M11 17C14.3137 17 17 14.3137 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11C5 14.3137 7.68629 17 11 17ZM11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15Z"
+														fill="#0F0F0F"
+													/>
+													<path
+														d="M17 4C16.4477 4 16 4.44772 16 5C16 5.55228 16.4477 6 17 6C17.5523 6 18 5.55228 18 5C18 4.44772 17.5523 4 17 4Z"
+														fill="#0F0F0F"
+													/>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M0.653961 3.27606C0 4.55953 0 6.23969 0 9.6V12.4C0 15.7603 0 17.4405 0.653961 18.7239C1.2292 19.8529 2.14708 20.7708 3.27606 21.346C4.55953 22 6.23969 22 9.6 22H12.4C15.7603 22 17.4405 22 18.7239 21.346C19.8529 20.7708 20.7708 19.8529 21.346 18.7239C22 17.4405 22 15.7603 22 12.4V9.6C22 6.23969 22 4.55953 21.346 3.27606C20.7708 2.14708 19.8529 1.2292 18.7239 0.653961C17.4405 0 15.7603 0 12.4 0H9.6C6.23969 0 4.55953 0 3.27606 0.653961C2.14708 1.2292 1.2292 2.14708 0.653961 3.27606ZM12.4 2H9.6C7.88684 2 6.72225 2.00156 5.82208 2.0751C4.94524 2.14674 4.49684 2.27659 4.18404 2.43597C3.43139 2.81947 2.81947 3.43139 2.43597 4.18404C2.27659 4.49684 2.14674 4.94524 2.0751 5.82208C2.00156 6.72225 2 7.88684 2 9.6V12.4C2 14.1132 2.00156 15.2777 2.0751 16.1779C2.14674 17.0548 2.27659 17.5032 2.43597 17.816C2.81947 18.5686 3.43139 19.1805 4.18404 19.564C4.49684 19.7234 4.94524 19.8533 5.82208 19.9249C6.72225 19.9984 7.88684 20 9.6 20H12.4C14.1132 20 15.2777 19.9984 16.1779 19.9249C17.0548 19.8533 17.5032 19.7234 17.816 19.564C18.5686 19.1805 19.1805 18.5686 19.564 17.816C19.7234 17.5032 19.8533 17.0548 19.9249 16.1779C19.9984 15.2777 20 14.1132 20 12.4V9.6C20 7.88684 19.9984 6.72225 19.9249 5.82208C19.8533 4.94524 19.7234 4.49684 19.564 4.18404C19.1805 3.43139 18.5686 2.81947 17.816 2.43597C17.5032 2.27659 17.0548 2.14674 16.1779 2.0751C15.2777 2.00156 14.1132 2 12.4 2Z"
+														fill="#0F0F0F"
+													/></svg></a
+											><a href="#" class="footer__contacts-social__links"
+												><svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="22"
+													height="18"
+													viewBox="0 0 22 18"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M18.7828 1.20311C19.1314 1.12346 19.3744 1.04515 19.5735 0.962892C19.8525 0.847613 20.0838 0.709522 20.4492 0.476949C20.7564 0.281493 21.15 0.264472 21.474 0.432634C21.798 0.600796 22.0001 0.926971 22.0001 1.28181C22.0001 2.32421 21.8654 3.17855 21.5535 3.93043C21.2912 4.56286 20.9226 5.07653 20.4817 5.54405C20.2955 8.78728 19.322 11.3342 17.8337 13.2638C16.2911 15.2638 14.2387 16.5445 12.0751 17.2617C9.91796 17.9768 7.6387 18.1366 5.59678 17.8945C3.56824 17.654 1.69312 17.0063 0.386128 16.026C0.0282049 15.7575 -0.0976105 15.2904 0.0795872 14.8879C0.256785 14.4854 0.692641 14.2483 1.14152 14.3101C2.42749 14.4873 3.66538 14.2054 4.68327 13.8022C4.48289 13.6971 4.29396 13.5833 4.11836 13.4661C3.19083 12.8468 2.44248 12.0063 2.10564 11.3566C1.96626 11.0878 1.96482 10.7716 2.10175 10.5016C2.17239 10.3624 2.27569 10.2436 2.40111 10.1531C1.04685 9.07526 0.500069 7.58447 0.500069 6.58572C0.500069 6.28876 0.641945 6.00836 0.884667 5.82561C0.986724 5.74877 1.10182 5.6928 1.22316 5.65908C1.12182 5.37292 1.04318 5.0838 0.983235 4.8039C0.717471 3.56292 0.741057 2.16224 1.02992 1.04793C1.12878 0.666613 1.45772 0.381306 1.86136 0.326788C2.26501 0.27227 2.66257 0.45945 2.86625 0.799907C3.94376 2.601 5.93123 3.70191 7.78094 4.35405C8.65058 4.66065 9.45601 4.85603 10.0597 4.97615C10.19 3.79908 10.5308 2.82837 11.0539 2.05739C11.7439 1.04021 12.7064 0.438384 13.7401 0.170035C15.5228 -0.292753 17.5009 0.234499 18.7828 1.20311ZM9.7485 6.88331C9.0634 6.75064 8.12179 6.52777 7.0942 6.16548C5.73698 5.68697 4.16096 4.94085 2.8408 3.78511C2.86442 3.99779 2.89797 4.20866 2.9419 4.41382C3.16315 5.44696 3.57427 6.02556 3.94728 6.20541C4.40349 6.42539 4.61492 6.94122 4.43795 7.40254C4.19835 8.02712 3.56817 8.0784 2.99558 7.94034C3.45611 8.60618 4.28385 9.27004 5.66447 9.49194C6.14065 9.56847 6.49216 9.96214 6.49994 10.4276C6.50772 10.8931 6.16956 11.2975 5.69618 11.3888L4.82572 11.5567C4.95888 11.6683 5.10308 11.7777 5.25678 11.8803C5.95369 12.3456 6.65344 12.5463 7.25753 12.4006C7.70998 12.2916 8.18055 12.4986 8.3917 12.8996C8.60286 13.3006 8.49853 13.7891 8.14025 14.077C7.49633 14.5939 6.74433 15.0086 5.99065 15.3529C5.63683 15.5145 5.24142 15.674 4.81197 15.8144C5.14226 15.8823 5.48594 15.9381 5.84086 15.9802C7.61143 16.1901 9.58217 16.0486 11.425 15.4378C13.2614 14.829 14.959 13.7592 16.2289 12.1127C17.4971 10.4685 18.3821 8.19313 18.5008 5.10357C18.5101 4.86032 18.6145 4.62948 18.793 4.45736C19.2426 4.02374 19.6142 3.52673 19.797 2.93513C19.4771 3.0313 19.1169 3.11454 18.6878 3.19364C18.3624 3.25364 18.0273 3.15429 17.793 2.92834C17.0284 2.19108 15.5165 1.70624 14.26 2.03242C13.6687 2.18594 13.1312 2.51827 12.7275 3.1133C12.3154 3.72082 12.0001 4.66724 12.0001 6.10359C12.0001 6.37647 11.8802 6.63658 11.6701 6.81943C11.1721 7.25293 10.334 6.99669 9.7485 6.88331Z"
+														fill="#0F0F0F"
+													/></svg
+											></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p class="footer__copy">© Tealuxe, 2023</p>
+						<ul class="footer__partners">
+							<li class="footer__partners-item">
+								<img src="/images/logos_mastercard.svg" alt="" />
+							</li>
+							<li class="footer__partners-item">
+								<img src="/images/visa.svg" alt="" />
+							</li>
+							<li class="footer__partners-item">
+								<img src="/images/logos_google-pay.svg" alt="" />
+							</li>
+							<li class="footer__partners-item">
+								<img src="/images/logos_paypal.svg" alt="" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</main>
+		<script src="js/main.js"></script>
+	</body>
+</html>
